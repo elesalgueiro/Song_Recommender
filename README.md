@@ -14,20 +14,25 @@ By web scraping the Billboard website, I get a list of the TOP100 hot songs. I s
 ### WORKFLOW
 After having our song lists I cluster the 10K songs I got from Spotify web API. I worked with K-means clustering which is one of the simplest and most popular unsupervised machine learning algorithms. 
 Clustering the songs will allow the recommendation system to limit the scope of the recommendations to only songs that belong to the same cluster - songs with similar audio features.
+
 Then I create a pipeline such that when the user enters a song :
-1 -Check whether or not the song is in the Billboard Hot 100.
-1.1 -If the song is in that list suggest the user another song from this list --> END
-1.2 -If the song is not in the Billboard Hot 100 -->
-1.2.1 -Collect the audio features from the song with the Spotify API.
-   		1.2.2-After that,  send the Spotify audio features of the submitted song to the clustering model, which should return a cluster number.
-   		1.2.3 -The system recommends another song to the user from the same cluster -->END
+
+Check whether or not the song is in the Billboard Hot 100.
+
+ 1.If the song is in that list suggest the user another song from this list --> END
+ 
+ 2.If the song is not in the Billboard Hot 100 -->Collect the audio features from the song with the Spotify API.
+  Afterthat, send the Spotify audio features of the submitted song to the clustering model, which should return a cluster number.
+  Then, the system recommends another song to the user from the same cluster -->END
          
  ![](https://github.com/elesalgueiro/Song_Recommender_Project/blob/main/Recommender_engine/Flowchart.png)
  
  
 ### LINKS
 
-Billboard web scrapping code
-Spotify API code
-Song Recommender code
+[Billboard web scrapping code](https://github.com/elesalgueiro/Song_Recommender_Project/tree/main/Hot_100_list)
+
+[Spotify API code](https://github.com/elesalgueiro/Song_Recommender_Project/tree/main/Spotify)
+
+[Song Recommender code](https://github.com/elesalgueiro/Song_Recommender_Project/tree/main/Recommender_engine)
 
