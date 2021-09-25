@@ -21,6 +21,13 @@ Then I create a pipeline such that when the user enters a song :
 1.2.1 -Collect the audio features from the song with the Spotify API.
    		1.2.2-After that,  send the Spotify audio features of the submitted song to the clustering model, which should return a cluster number.
    		1.2.3 -The system recommends another song to the user from the same cluster -->END
-      
-
+         
+ ![](https://github.com/elesalgueiro/Song_Recommender_Project/blob/main/Recommender_engine/Flowchart.png)
+ 
+ 
 ### LINKS
+
+Billboard web scrapping code
+Spotify API code
+Song Recommender code
+
